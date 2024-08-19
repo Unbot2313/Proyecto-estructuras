@@ -1,0 +1,29 @@
+[
+    {
+        "titulo": "Stranger Things",
+        "director": "Los Duffer Brothers",
+        "protagonista": "Winona Ryder",
+        "temporadas": 4,
+        "episodios_totales": 34,
+        "ranking": 8.7,
+        "anio" : 2016
+    },
+    {
+        "titulo": "Breaking Bad",
+        "director": "Vince Gilligan",
+        "protagonista": "Bryan Cranston",
+        "temporadas": 5,
+        "episodios_totales": 62,
+        "ranking": 9.5,
+        "anio" : 2008
+    },
+    {
+        "titulo": "The Crown",
+        "director": "Peter Morgan",
+        "protagonista": "Claire Foy",
+        "temporadas": 3,
+        "episodios_totales": 30,
+        "ranking": 8.6,
+        "anio" : 2016
+    }
+]
