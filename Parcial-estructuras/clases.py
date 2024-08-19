@@ -24,13 +24,13 @@ class ManejadorPeliculas:
         
     
     def validar_array_no_vacio(self):
-        if len(self.peliculas) == 0:
-            print("La lista de películas no puede estar vacía.")
+        if len(self.peliculas) >= 0:
+            print("La lista de películas no puede estar vacía. volviendo al menu...")
             self.menu()
 
     def validar_max_peliculas(self):
-        if len(self.peliculas) >= ManejadorPeliculas.MAX_PELICULAS:
-            print(f"La lista de películas no puede contener más de {ManejadorPeliculas.MAX_PELICULAS} películas.")
+        if len(self.peliculas) == ManejadorPeliculas.MAX_PELICULAS:
+            print(f"La lista de películas no puede contener más de {ManejadorPeliculas.MAX_PELICULAS} películas. volviendo al menu...")
             self.menu()
 
     def verificar_existencia_pelicula(self, titulo):
@@ -41,9 +41,7 @@ class ManejadorPeliculas:
             print(f"Ya existe una película con el título '{pelicula.titulo}'.")
             self.menu()
         
-        if len(self.peliculas) >= ManejadorPeliculas.MAX_PELICULAS:
-            print("No se puede agregar más películas. Se ha alcanzado el límite máximo.")
-            self.menu()
+        self.validar_max_peliculas()
         
         self.peliculas.append(pelicula)
 
